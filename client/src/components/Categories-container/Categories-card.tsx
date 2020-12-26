@@ -24,10 +24,10 @@ const CategoriesCard = ({ user }: { user: any }) => {
     }
     return (
             <div className="card1 card1-block">
-            <img className="img1" src={user.catImg} />
-            <button onClick={handleClick}>
+            <img className="img1" src={user.catImg} onClick={handleClick}/>
+
                 <h5 className="card-title mt-3 mb-3"><Link to="/provider">{user.catName}</Link></h5>
-            </button>
+        
                 {/* <p className="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> */}
             </div>
         // <div className="cat-container">

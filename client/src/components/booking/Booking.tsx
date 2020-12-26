@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { appendErrors, useForm } from 'react-hook-form';
 import FontAwesome from 'react-fontawesome';
 import './Booking.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { appendErrors, useForm } from 'react-hook-form';
+
 
 
 // import DateTimePicker from 'react-bootstrap-date-time-picker';
@@ -49,7 +50,7 @@ export default function Booking() {
                         </div>
                         <form 
                             onSubmit={ handleSubmit(async (bookData) => {
-                            console.log(bookData);
+                            console.log("--------------",userInStore.user.id);
 
                             await axios.post(`http://localhost:8000/calender/`,
                                 {
@@ -100,7 +101,7 @@ export default function Booking() {
                                     <div className="form-group">
                                         <label className="control-label" htmlFor="date">Preferred Date </label>
                                         {/* <input id="date" name="date" type="text" placeholder="dd/mm/yyyy" className="form-control input-md"></input> */}
-                                        <DatePicker selected={startDate} onChange={(e) => {setStartDate(e.target.value)}} />
+                                        <DatePicker selected={startDate} onChange={(e) => {setStartDate(e)}} />
 
 
 

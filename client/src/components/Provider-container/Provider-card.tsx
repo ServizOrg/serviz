@@ -34,7 +34,7 @@ const ProviderCard = ({ prov }: { prov: any }) => {
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0"  >
                 {/* <!-- Card--> */}
                 <div className="card shadow-sm border-0 rounded" >
-                    <div className="card-body" id="img"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570799922/profile-1_dewapk.jpg" alt="" className="w-100 card-img-top" onClick={() => { window.location.href = "http://google.com" }} />
+                    <div className="card-body" id="img"><img src={prov.picture} alt="" className="w-100 card-img-top" onClick={() => { window.location.href = "http://google.com" }} />
                         <div className="p-4">
                             <h5 className="mb-0">{prov.name}</h5>
                             <p className="small text-muted">{prov.phone}</p>

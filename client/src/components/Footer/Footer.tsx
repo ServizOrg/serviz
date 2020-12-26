@@ -54,6 +54,16 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
+                        <div className="col-md-3 col-sm-6">
+                            <div className="footer-info-single">
+                                <h2 className="title">Customer information</h2>
+                                <ul className="list-unstyled">
+                                    <li><a href="http://www.nextbootstrap.com/" title=""><i className="fa fa-angle-double-right"></i> About Us</a></li>
+                                    <li><a href="http://www.nextbootstrap.com/" title=""><i className="fa fa-angle-double-right"></i> Our servics</a></li>
+                                    <li><a href="http://www.nextbootstrap.com/" title=""><i className="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
                         
 
