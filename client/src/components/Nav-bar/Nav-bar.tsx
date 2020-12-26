@@ -61,15 +61,18 @@ const Navbar = () => {
 
     }
     const checkUser = async () => {
+        console.log("idddddddddddd", userInStore.user)
         await axios.post(`http://localhost:8000/user/specUser/`,
             {
-                pk: userInStore.user.id
+                user: userInStore.user.id
             })
-            .then(async (result: any) => {
-                console.log('user', result.data)
+            .then( (result: any) => {
+                console.log('user', result.data[0])
                 console.log("post", result.data[0].role)
                 if (result.data[0].role === 'user') {
                     window.location.href = "/profiles/user"
+                    console.log("post", result.data[0].role)
+
                 }
             })
             .catch(async (result: any) => {

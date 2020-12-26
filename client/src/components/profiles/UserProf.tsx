@@ -33,7 +33,7 @@ export default function UserProf() {
     const [userData, setuserData] = useState(data);
     
     useEffect(() => {
-        axios.post(`http://localhost:8000/user/specUser/`, { pk: userInStore.user.id })
+        axios.post(`http://localhost:8000/user/specUser/`, { user:userInStore.user.id })
 
             .then((result: any) => {
                 console.log("axios", result.data[0])
