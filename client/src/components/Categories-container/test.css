@@ -1,0 +1,24 @@
+.cat-container{ 
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: 150px;
+  width: 100%; */
+  border: 2px solid black;
+  margin: 30px 15px;
+  /* background-color: #00008B;
+  color: #fff;
+  font-size: 4em; */
+  transition:0.5s;
+    cursor:pointer;
+}
+
+.cat-img{
+  height: 150px;
+  width: 90%;
+}
+
+  .cat-container:hover{
+    /* transform: scale(1.25) rotate(100deg);  */
+    color:#18d4ca;
+  }

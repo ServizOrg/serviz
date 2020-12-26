@@ -1,0 +1,57 @@
+#login {
+    position: relative;
+    top: -850px;
+    animation: popup 1s ease forwards;
+    
+}
+
+#login-form {
+  /* position: absolute; */
+  width: 400px;
+  margin: 10px auto;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+}
+
+@keyframes popup {
+    0%{opacity: 0}
+    70%{transform: translateY(950px)}
+    100%{transform: translateY(950px); opacity: 1}
+    
+}
+
+
+#login-form h1 {
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+#login-form input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+}
+
+#login-form label {
+  display: block;
+  margin: 10px 0 10px;
+}
+
+#login-form .btn-login {
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #FFDF6C;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}

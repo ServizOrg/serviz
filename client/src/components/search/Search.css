@@ -1,0 +1,138 @@
+/* 
+.dropdown-cat:focus,
+.dropdown-cat:hover{
+  outline: none;
+  border: 1px solid #bbbbbb;
+
+}
+
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+ .dropdown ,.dropbtn{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;} 
+ */
+
+
+ /* ////////////////////////////////////////////////////////// */
+ .dropdown{
+   margin: 10px;
+  position: relative;
+  display: inline-block;
+ }
+ .dropdown select,.btn-search{
+   background:#3f3f3f;
+   color: #ffdf6c;
+   padding:8px 70px ;
+   width: 250px;
+   height: 50px;
+   border: none;
+   font-size: 20px;
+   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+   -webkit-appearance: button;
+   outline: none;
+ }
+ .dropdown:before{
+   font-family: "Font Awesome 5 Free" ;
+   position: absolute;
+   top:0;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   color: #ffdf6c;
+   font-size: 28px;
+   background: #3f3f3f;;
+   pointer-events:none;
+ }
+ .cat:before{
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f7d9";
+ }
+ .city:before{
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f64f";
+ }
+.searchfor{
+  margin-top: 1px;
+  width: 250px;
+  height: 50px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0);
+  padding:8px 70px ;
+  text-align: left;
+}
+ 
+ .dropdown:hover::before{
+  background: #707070;
+ }
+ .dropdown select:hover:{
+  background: #707070;
+ }
+ .btn-search hover {
+  background: #707070;
+  opacity: 6;
+ }
+
+ /* /////////////////////////////////////////////// */
+ .search-sec{
+  background: #707070;padding: 0rem;
+  align-items: center;
+  margin: 100px 100px;
+  /* display: inline-block; */
+}
+.search-slt{
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  height: calc(3rem + 2px) !important;
+  border-radius:0;
+}
+.wrn-btn{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+   height: calc(3rem + 2px) !important;
+   border-radius:0;
+}
+
+.center{
+  display: inline-block;
+}
