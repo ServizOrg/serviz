@@ -43,7 +43,7 @@
 	font-weight: bold;
 }
 .navbar-light .navbar-brand {
-	color: #fff;
+	color: black;
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -78,7 +78,7 @@
 }
 @media only screen and (max-width: 767px) {
 	.navbar-nav.ml-auto {
-		background: rgba(0, 0, 0, 0.5);
+		background: yellow(0, 0, 0, 0.5);
 	}
 	.navbar-nav a {
 		font-size: 14px;

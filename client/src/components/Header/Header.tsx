@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import 'react-multi-carousel/lib/styles.css';
 // import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-// import faStyles from 'font-awesome/css/font-awesome.css'
+import HowWorks from '../HowWorks/HowWorks'
 
 // import { Carousel } from 'mdb-ui-kit';
 
@@ -31,7 +31,7 @@ export default function Header() {
 						<div className="carousel-caption d-none d-md-block">
 							<h5 className="animated bounceInRight" style={{ animationDelay: "1s" }} >HOME SERVICES ON-DEMAND</h5>
 							<p className="animated bounceInLeft" style={{ animationDelay: "2s" }}>We're an open book, easily view all the reviews and stats of the Pro who's on the way to fix your problem.</p>
-							<p className="animated bounceInRight" style={{ animationDelay: "3s" }}><a href="#">More Info</a></p>
+							<p className="animated bounceInRight" style={{ animationDelay: "3s" }}><a href="/howorks">More Info</a></p>
 						</div>
 					</div>
 					<div className="carousel-item">
