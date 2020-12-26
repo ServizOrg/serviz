@@ -111,7 +111,7 @@ const Navbar = () => {
 
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <span className="menu">
+                    {/* <span className="menu"> */}
 
                         <ul>
                             <li className="pc-view"><a href="#">{t("how_it_works")}</a></li>
@@ -139,7 +139,7 @@ const Navbar = () => {
 
 
                         </ul>
-                    </span>
+                    {/* </span> */}
                 </div>
             </div>
             <span className="navbar-toggler-icon" onClick={openClick}>
