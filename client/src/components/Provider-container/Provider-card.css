@@ -28,7 +28,10 @@ img {
   background: #fafafa;
 }
 
-
+img {
+  border-radius: 5px 5px 0 0;
+  margin: 0 auto;
+} 
 .social-link {
   width: 30px;
   height: 30px;
