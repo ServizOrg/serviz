@@ -96,10 +96,9 @@ text-align: right ;
 
 
 
-
-/* #footer{
-    position: fixed;
-    left: 0;
+footer{
+  position: relative; 
+  position: sticky;
     bottom: 0;
-    width: 100%;
-} */
+   
+}
