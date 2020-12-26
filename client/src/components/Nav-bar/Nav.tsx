@@ -68,7 +68,7 @@ export default function Nav() {
 		const checkUser = async () => {
 			await axios.post(`http://localhost:8000/user/specUser/`,
 				{
-					pk: userInStore.user.id
+					user: userInStore.user.id
 				})
 				.then(async (result: any) => {
 					console.log('user', result.data)
