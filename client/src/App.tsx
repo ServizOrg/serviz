@@ -20,7 +20,7 @@ import ServiceProvider from "../src/components/ServiceProvider/ServiceProvider"
 import Booking from "./components/booking/Booking"
 import Activate from './components/Activate';
 // import Search from './components/search/Search';
-
+import Nav from  "./components/Nav-bar/Nav"
 import HowWorks from './components/HowWorks/HowWorks'
 
 
@@ -40,6 +40,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        {/* <Nav/> */}
         {/* < Map /> */}
         <Navbar />
         {/* <Test/> */}
