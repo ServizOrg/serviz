@@ -89,8 +89,8 @@ const ProviderSignup = () => {
         <div id="signup" className="center styled">
             <form id="signup-form"
                 onSubmit={handleSubmit((formData) => {
-                    console.log(formData)
-
+                    console.log("--------------",formData)
+                
                     axios.post(`http://localhost:8000/serviceprovider/`, {
                         categoryId: selectCategory.pk,
                         phone: formData.phone,

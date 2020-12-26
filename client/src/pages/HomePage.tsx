@@ -9,12 +9,12 @@ require('dotenv').config();
 const HomePage = () => {
     return ( 
         <div>
-            {/* <Main /> */}
+           
             
             <Header/>
             <Search />
             <Categories />
-            {/* <HowWorks/> */}
+           
         </div>
      );
 }

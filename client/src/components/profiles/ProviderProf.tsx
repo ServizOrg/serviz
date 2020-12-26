@@ -44,11 +44,15 @@ export default function ProviderProf() {
     //   this.setState({ selectedFile: event.target.files[0] })
     // }
 
+    const userInStore = useSelector((state: any) => state.user);
+    const dispatch = useDispatch();
+    console.log("store ===> ", userInStore)
+
     const [test, setTest] = useState([]);
     const [servData, setservData] = useState(data);
 
     useEffect(() => {
-        axios.post(`http://localhost:8000/serviceprovider/servProv/`, { provider: "2" })
+        axios.post(`http://localhost:8000/serviceprovider/servProv/`, { provider: userInStore.user.id })
 
             .then((result: any) => {
                 console.log("axios", result.data[0])

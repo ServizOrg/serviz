@@ -13,7 +13,7 @@ class UserList(generics.ListCreateAPIView):
 
 @api_view(['POST'])
 def sepUser(request):
-    specUser = User.objects.all().filter(pk=request.data['pk'])
+    specUser = User.objects.all().filter(user=request.data['user'])
     seralizer = UserSerializer(specUser,many=True)
 
     return Response (seralizer.data)
