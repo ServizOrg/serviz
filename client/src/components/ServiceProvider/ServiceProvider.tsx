@@ -19,8 +19,8 @@ export default function ServiceProvider() {
             <div className="row">
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
-                        <img src="https://i.pinimg.com/236x/00/85/a5/0085a5a85afffb2375787162a0701f89.jpg" alt="Photo of sunset" onClick={() => { window.location.href = '/fastfoodres' }} />
-                        <h5 className="card-title mt-3 mb-3">Electrican</h5>
+                        <img src="https://www.emigrationnewzealand.com/wp-content/uploads/2017/12/does-new-zealand-need-electricians.jpg" alt="Photo of sunset" onClick={() => { window.location.href = '/book' }} />
+                        <h5 className="card-title mt-3 mb-3">Kholoud123</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/ec/f5/14/ecf5143888bdb70190cbddde082dce1f.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Painting</h5>
+                        <h5 className="card-title  mt-3 mb-3">Yasir Mahmouad</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/36/c9/ad/36c9ad0462d8e681530544062d1a6efd.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Tiling walls</h5>
+                        <h5 className="card-title  mt-3 mb-3">Khaled Samer</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/fe/de/63/fede63dbba695ea9dc7bc36eafc45421.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Plaster</h5>
+                        <h5 className="card-title  mt-3 mb-3">Saeed Khamaseh</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/75/5f/c4/755fc47845064f4dc79d23752650ee56.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Alumini</h5>
+                        <h5 className="card-title  mt-3 mb-3">Rami Nawahda</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/cb/67/01/cb6701ce05de361ca41e8db3f9573bdd.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Carpenter</h5>
+                        <h5 className="card-title  mt-3 mb-3">Mohamed Ashqar</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/08/fb/80/08fb80760f6550ee76d2d72d2534ab32.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Satellite</h5>
+                        <h5 className="card-title  mt-3 mb-3">Jameel Jamal</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/bc/9a/9e/bc9a9e59a1e4f81746c53ba439c15943.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Parquet</h5>
+                        <h5 className="card-title  mt-3 mb-3">Mouaz Slameh</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/f1/ed/97/f1ed9773efd3fdb9a1323c80a37cab84.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Gypsum</h5>
+                        <h5 className="card-title  mt-3 mb-3">Jorge Wassouf</h5>
                         <p className="star"><StarRating /></p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ export default function ServiceProvider() {
                 <div className="col-md-3 col-sm-6">
                     <div className="card card-block">
                         <img src="https://i.pinimg.com/236x/82/ad/6d/82ad6d878f3b812bf1a68d36818785be.jpg" alt="Photo of sunset" />
-                        <h5 className="card-title  mt-3 mb-3">Appliance</h5>
+                        <h5 className="card-title  mt-3 mb-3">Kazem Alsaher</h5>
 
                         <p className="star"><StarRating /></p>
                     </div>

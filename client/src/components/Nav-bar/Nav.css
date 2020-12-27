@@ -43,17 +43,17 @@
 	font-weight: bold;
 }
 .navbar-light .navbar-brand {
-	color: black;
+	color: darkgoldenrod;
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-	color: #fff;
+	color: darkgoldenrod !important;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #fff;
+	color:darkgoldenrod !important;
 }
 .navbar-nav {
 	text-align: center;

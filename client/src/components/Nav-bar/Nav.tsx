@@ -108,15 +108,15 @@ export default function Nav() {
 						 <ul className="navbar-nav ml-auto">
 						 	<li className="nav-item" onClick={handleClick}>
 								
-								< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
+								< div style= {{color:"darkgoldenrod"}} id="lang-Dropdown pc-view" className="lang-dropdown-content">
 									 <li className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> English</li>
 									<li className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>عربي</li>
 								</div>
 							</li>
 							</ul>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav ml-auto">
-							<li className="nav-item active" onClick={handleClick}>
+						<ul style= {{color:"darkgoldenrod"}} className="navbar-nav ml-auto">
+							<li  className="nav-item active" onClick={handleClick}>
 								<a className="nav-link" href="/">{t("home")}</a>
 							</li>
 							<li className="nav-item" onClick={handleClick}>

@@ -91,7 +91,7 @@
   height: 50px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0);
   padding:8px 70px ;
-  text-align: left;
+  text-align: center;
 }
  
  .dropdown:hover::before{
@@ -116,7 +116,7 @@
 .search-slt{
  
   display: block;
-  width: 100%;
+  width: 80%;
   font-size: 0.875rem;
   line-height: 1.5;
   color: #55595c;
@@ -136,5 +136,6 @@
 }
 
 .center{
-  display: inline-block;
+  align-content: center;
+  /* display: inline-block; */
 }

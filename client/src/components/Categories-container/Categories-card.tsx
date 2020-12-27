@@ -11,16 +11,16 @@ const CategoriesCard = ({ user }: { user: any }) => {
     const dispatch = useDispatch();
     // console.log("hi", user)
     const handleClick = () => {
-        axios.post(`http://localhost:8000/category/providers/`, {
-            catName: user.catName,
-        })
-            .then((result: any) => {
-                console.log("axios", result.data[0].providers)
-                dispatch(getProv(result.data[0].catName, result.data[0].providers))
-            })
-            .catch((err: any) => {
-                console.error("err===== =>", err);
-            })
+        // axios.post(`http://localhost:8000/category/providers/`, {
+        //     catName: user.catName,
+        // })
+        //     .then((result: any) => {
+        //         console.log("axios", result.data[0].providers)
+        //         dispatch(getProv(result.data[0].catName, result.data[0].providers))
+        //     })
+        //     .catch((err: any) => {
+        //         console.error("err===== =>", err);
+        //     })
     }
     return (
         <div className="card1 card1-block" id="car">
