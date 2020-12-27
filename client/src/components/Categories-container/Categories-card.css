@@ -14,38 +14,46 @@ cursor:pointer;
 } */
 
 .img1{
-  height:80%;
-  width:100%;
-}
-
-div [class^="col-"]{
-  padding-left:10px;
-  padding-right:10px;
-}
-.card1{
-  transition:0.5s;
-  cursor:pointer;
-  margin: 20px 30px;
-  width: 180px;
-  height: 250px;
-}
-.card-title{  
-  font-size:15px;
-  transition:1s;
-  cursor:pointer;
-  text-align: center;
-}
-.card-title i{  
-  font-size:15px;
-  transition:1s;
-  cursor:pointer;
-  color:#ffa710
-}
-.card-title i:hover{
-  transform: scale(1.25) rotate(100deg); 
-  color:#18d4ca;
+    height:80%;
+    width:100%;
+  }
   
-}
+  div [class^="col-"]{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .card1{
+    transition:0.5s;
+    cursor:pointer;
+    margin: 20px 30px;
+    width: 180px;
+    height: 250px;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    text-align: center;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card1:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
 .card1:hover{
   transform: scale(1.05);
   box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
