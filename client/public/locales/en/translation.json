@@ -2,8 +2,11 @@
   "app_name": "SERVIZ",
   "join": "Join",
   "log_in": "Log In",
-  "log_out":"LOG OUT",
+  "how_it_works": "How it Works",
+  "Browse_Jobs": "Browse Jobs",
+  "profile":"profile",
   "home":"Home",
-  "about":"About"
-  
+  "about":"about",
+  "logout":"logout"
+
 }

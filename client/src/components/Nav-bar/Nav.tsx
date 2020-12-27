@@ -100,45 +100,57 @@ export default function Nav() {
 		
 			<nav className="navbar navbar-expand-lg navbar-light fixed-top">
 				<div className="container">
-					<a href="/" className="navbar-brand">SERVIZ</a>
+					<a href="/" className="navbar-brand">{t("app_name")}</a>
 					 <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
 						 <span className="navbar-toggler-icon">
 						 </span>
 						 </button>
+						 <ul className="navbar-nav ml-auto">
+						 	<li className="nav-item" onClick={handleClick}>
+								
+								< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
+									 <li className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> English</li>
+									<li className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>عربي</li>
+								</div>
+							</li>
+							</ul>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav ml-auto" id="txt">
+						<ul className="navbar-nav ml-auto">
 							<li className="nav-item active" onClick={handleClick}>
-								<a className="nav-link" href="/">Home</a>
+								<a className="nav-link" href="/">{t("home")}</a>
 							</li>
 							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/about">About</a>
+								<a className="nav-link" href="/about">{t("about")}</a>
 							</li>
+						
 							
-							
-							<li className="nav-item">
-                                {/* <button onClick={selectLang} className="lang-dropbtn">Languages</button> */}
-                                {/* < div id="lang-Dropdown pc-view" className="lang-dropdown-content"> */}
-                                    <span className="nav-link" onClick={() => i18n.changeLanguage("en")}> Eng/</span>
-                                    <span className="nav-link" onClick={() => i18n.changeLanguage("ar")}>Ar</span>
-                                {/* </div> */}
+							<li className="nav-item" onClick={handleClick}>
+								<a className="nav-link" href="/howorks">{t("how_it_works")}</a>
+							</li>
+							{token === null ?
+							<span>
+							<li className="nav-item" onClick={handleClick}>
+								<a className="nav-link" href="/user/login">{t("log_in")}</a>
+							</li>
+							<li className="nav-item" onClick={handleClick}>
+								<a className="nav-link" href="/user/signup">{t("join")}</a>
+							</li>
+							</span>
+							:
+							<span>
+							<li><a onClick={checkUser}>{t("profile")}</a></li>
+							<li>
+								<Logout />
+							</li>
+						</span>}
+
+							{/* <li className="nav-item" onClick={handleClick}>
 								
-
-                            </li>
-							<li className="nav-item">
-                            {token === null ?
-                                <span>
-                                    <li className="nav-link"><Link to="/user/login">{t("log_in")}</Link></li>
-                                    <li className="nav-link"><Link to="/user/signup">{t("join")}</Link></li>
-                                </span>
-                                :
-                                <span>
-                                    <li className="nav-link"><a onClick={checkUser}>Profile</a></li>
-                                    <li className="nav-link">
-                                        <Logout />
-                                    </li>
-                                </span>}
-								</li>
-
+							< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
+                                 <span className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> English</span>
+                                <span className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>عربي</span>
+                            </div>
+							</li> */}
 						</ul>
 					</div>
 				</div>
