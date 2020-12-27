@@ -106,7 +106,7 @@ export default function Nav() {
 						 </span>
 						 </button>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav ml-auto">
+						<ul className="navbar-nav ml-auto" id="txt">
 							<li className="nav-item active" onClick={handleClick}>
 								<a className="nav-link" href="/">Home</a>
 							</li>
@@ -114,33 +114,32 @@ export default function Nav() {
 								<a className="nav-link" href="/about">About</a>
 							</li>
 							
-							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/howorks">How SERVIZE Work</a>
-							</li>
-							{token === null ?
-							<span>
-							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/user/login">LogIn</a>
-							</li>
-							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/user/signup">Join Us</a>
-							</li>
-							</span>
-							:
-							<span>
-							<li><a onClick={checkUser}>Profile</a></li>
-							<li>
-								<Logout />
-							</li>
-						</span>}
+							
+							<li className="lang-dropdown">
+                                {/* <button onClick={selectLang} className="lang-dropbtn">Languages</button> */}
+                                < div id="lang-Dropdown pc-view" className="lang-dropdown-content">
+                                    <span className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> Eng/</span>
+                                    <span className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>Ar</span>
+                                </div>
+								< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
+                                   
+                                    
+                                </div>
 
-							<li className="nav-item" onClick={handleClick}>
-								
-							< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
-                                 <span className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> English</span>
-                                <span className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>عربي</span>
-                            </div>
-							</li>
+                            </li>
+                            {token === null ?
+                                <span>
+                                    <li><Link to="/user/login">{t("log_in")}</Link></li>
+                                    <li><Link to="/user/signup">{t("join")}</Link></li>
+                                </span>
+                                :
+                                <span>
+                                    <li><a onClick={checkUser}>Profile</a></li>
+                                    <li>
+                                        <Logout />
+                                    </li>
+                                </span>}
+
 						</ul>
 					</div>
 				</div>

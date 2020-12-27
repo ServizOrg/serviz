@@ -94,11 +94,8 @@ padding: 0;
 text-align: right ;
 }
 
-
-
-footer{
-  position: relative; 
+footer {
+  position: relative;
   position: sticky;
-    bottom: 0;
-   
+  bottom: 0;
 }

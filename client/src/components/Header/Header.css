@@ -11,7 +11,7 @@
 	letter-spacing: 2px;
 	margin-top: 25px;
 	font-family: merienda;
-	color: #3f3f3f;
+	color: black;
 }
 .carousel-caption p {
 	width: 60%;
@@ -19,7 +19,7 @@
 	font-size: 18px;
 	line-height: 1.9;
 	font-family: poppins;
-	color: #3f3f3f;
+	color:black;
 }
 .carousel-caption a {
 	text-transform: uppercase;

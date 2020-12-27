@@ -1,13 +1,22 @@
-#id{
-    align-content: center;
+#container {
+    background-color: blue;
+    margin-top: 200px;
 }
 
+
+
+
+/* 
 #aboutus{
-    margin-top: 400px;
-    align-content: center;
+    margin-bottom: 1000px;
+   width: 500px;
+   height: 1000px;
+   
+    background-color: aqua;
+    
     font-size: larger;
     font-style: oblique;
     color: darkgoldenrod;
     background-color: black;
 
-}
+} */

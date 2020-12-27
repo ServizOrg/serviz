@@ -30,8 +30,8 @@ export default function Header() {
 						<img alt="First slide" className="d-block w-100" src="https://t4.ftcdn.net/jpg/03/19/42/81/240_F_319428113_xtWoSqCOX9gEQtdJpel4QukCLEg5TJEH.jpg" />
 						<div className="carousel-caption d-none d-md-block">
 							<h5 className="animated bounceInRight" style={{ animationDelay: "1s" }} >HOME SERVICES ON-DEMAND</h5>
-							<p className="animated bounceInLeft" style={{ animationDelay: "2s" }}>We're an open book, easily view all the reviews and stats of the Pro who's on the way to fix your problem.</p>
-							<p className="animated bounceInRight" style={{ animationDelay: "3s" }}><a href="/howorks">How SERVIZ Work</a></p>
+							<p className="animated bounceInLeft" style={{ animationDelay: "2s" }}>We're an open book, easily view all the reviews and states of the Provider who's on the way to fix your problem.</p>
+							<p className="animated bounceInRight" style={{ animationDelay: "3s" }}><a href="/howorks">How SERVIZ Work ?</a></p>
 						</div>
 					</div>
 					<div className="carousel-item">

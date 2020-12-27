@@ -2,6 +2,7 @@
   "app_name": "SERVIZ",
   "join": "Join",
   "log_in": "Log In",
-  "how_it_works": "How it Works",
-  "Browse_Jobs": "Browse Jobs"
+  "home":"Home",
+  "about":"About"
+  
 }
