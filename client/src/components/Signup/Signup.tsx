@@ -80,6 +80,7 @@ const Signup = (props: any) => {
 
                     <label htmlFor="password" >Password:</label>
                     <input type="password" className="text" id="password" name="password" ref={register({ required: "required" })} />
+                    <div className="password-req" id="msg" >8 characters or longer. Combine upper and lowercase letters and numbers</div>
 
                     <label htmlFor="confirmPassword" >Confirm Password:</label>
                     <input type="password" className="text" id="confirmPassword" name="confirmPassword" ref={register({ required: "required" })} />
@@ -87,9 +88,9 @@ const Signup = (props: any) => {
                 </div>
 
                 <button className="btn-signup" >Sign Up</button>
-                <button className="btn cancel" onClick={closeForm}>Close</button>
+                
 
-                <div className="password-req" >8 characters or longer. Combine upper and lowercase letters and numbers</div><br />
+                <br />
                 <p >Already have an account? <Link to="/user/login" style={{ textDecoration: "none" }}>Sign In</Link></p>
                 {/* {userInStore.user.status ? null : <Redirect to="/usertype" />} */}
             </form>

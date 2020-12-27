@@ -12,11 +12,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const Footer = () => {
     return (
         <section>
-        <div >
-            {/* <hr className="hr-or" />
+        <div id="size">
+            <hr className="hr-or" />
             <span className="span-or"></span>
             <hr className="hr-or" />
-            <hr className="hr-or" /> */}
+           
             <footer className="nb-footer">
                 <div className="container">
                     <div className="row">

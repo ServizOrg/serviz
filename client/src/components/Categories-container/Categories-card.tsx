@@ -23,7 +23,7 @@ const CategoriesCard = ({ user }: { user: any }) => {
         })
     }
     return (
-            <div className="card1 card1-block">
+            <div className="card1 card1-block" id="car">
             <img className="img1" src={user.catImg} onClick={handleClick}/>
 
                 <h5 className="card-title mt-3 mb-3"><Link to="/provider">{user.catName}</Link></h5>
