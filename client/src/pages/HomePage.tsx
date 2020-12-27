@@ -14,9 +14,7 @@ const HomePage = () => {
             
             <Header/>
             <Search />
-            <div id="sty">
             <Categories />
-            </div>
            
         </div>
      );

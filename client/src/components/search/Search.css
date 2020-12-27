@@ -109,8 +109,8 @@
  .search-sec{
   background: #707070;padding: 0rem;
   align-items: center;
-  /* margin: 100px 100px; */
-  /* display: inline-block; */
+  margin: 100px 100px;
+  display: inline-block;
   align-content: center;
 }
 .search-slt{
