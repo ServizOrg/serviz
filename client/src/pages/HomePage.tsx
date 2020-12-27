@@ -3,18 +3,21 @@ import Search from '../components/search/Search';
 import Categories from "../components/Categories-container/Categories-container";
 import HowWorks from '../components/HowWorks/HowWorks'
 import Header from "../components/Header/Header";
+import './home.css'
 
 require('dotenv').config();
 
 const HomePage = () => {
     return ( 
         <div>
-            {/* <Main /> */}
+           
             
             <Header/>
             <Search />
+            <div id="sty">
             <Categories />
-            {/* <HowWorks/> */}
+            </div>
+           
         </div>
      );
 }

@@ -6,7 +6,7 @@ const ProviderContainer = () => {
     const dispatch = useDispatch();
     const userInStore = useSelector((state: any) => state.providers.providers)
 
-    // console.log("store ===> ",userInStore)
+    console.log("store +++++++++++++++===> ",userInStore)
     // const [allprov, setAllprov] = useState([]);
     // const [reqprov, setReqprov] = useState([]);
     console.log("hi", userInStore)

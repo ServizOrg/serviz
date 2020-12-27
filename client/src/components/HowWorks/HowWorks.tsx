@@ -1,11 +1,13 @@
 import React from 'react';
-import background  from '../images/provider.jpg'
+import background  from './prov.png'
+
 import './how.css'
  
 function HowWorks() {
     return (
-       <div id="main">
-         
+       <div id="how" >
+           
+         <img src={background}  alt="" id="img"/>
     </div>
     );
 }

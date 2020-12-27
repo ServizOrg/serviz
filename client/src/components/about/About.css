@@ -1,0 +1,16 @@
+#container{
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
+    align-content: center;
+}
+
+#aboutus{
+    margin-top: 400px;
+    align-content: center;
+    font-size: larger;
+    font-style: oblique;
+    color: darkgoldenrod;
+    background-color: black;
+
+}

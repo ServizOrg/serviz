@@ -12,11 +12,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const Footer = () => {
     return (
         <section>
-        <div>
-            {/* <hr className="hr-or" />
+        <div id="size">
+            <hr className="hr-or" />
             <span className="span-or"></span>
             <hr className="hr-or" />
-            <hr className="hr-or" /> */}
+           
             <footer className="nb-footer">
                 <div className="container">
                     <div className="row">
@@ -54,7 +54,6 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-
                         <div className="col-md-3 col-sm-6">
                             <div className="footer-info-single">
                                 <h2 className="title">Customer information</h2>
@@ -65,6 +64,8 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
+
+                        
 
                         <div className="col-md-3 col-sm-6">
                             <div className="footer-info-single">

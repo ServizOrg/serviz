@@ -40,9 +40,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Nav/> */}
+        <Nav/>
         {/* < Map /> */}
-        <Navbar />
+        {/* <Navbar /> */}
         {/* <Test/> */}
         {/* <Catagories /> */}
         {/* <Categories /> */}
@@ -70,7 +70,7 @@ function App() {
           <Route path="/client/signup" component={UsersSignup} />
           <Route path="/user/signup" component={Signup} />
           <Route path="/user/login" component={Login} />
-          
+
           {/* <Route path="/providerProfile" exact component={() => < ProviderProf/>} /> */}
           <Route path="/provider" component={ProviderContainer} />
           <Route path="/book" component={Booking} />
