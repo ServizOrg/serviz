@@ -107,7 +107,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'servizeDB', 
         'USER': 'postgres', 
-        'PASSWORD': '741987',
+        'PASSWORD': 'rami871995',
         'HOST': 'localhost', 
         'PORT': '5432',
         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',

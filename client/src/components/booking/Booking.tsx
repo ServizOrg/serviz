@@ -21,8 +21,11 @@ const axios = require('axios');
 const $ = require('jquery');
 
 interface bookData {
-    date: string;   
-    desc: string;
+    user:string;
+    provider:string;
+    bookDate: string;   
+    Subject: string;
+
 }
 
 // const data: bookData = {
@@ -37,9 +40,10 @@ export default function Booking() {
     const { register, handleSubmit, errors } = useForm<bookData>();
     const [submitting, setSubmitting] = useState<boolean>(false);
     const [serverErrors, setServerErrors] = useState<Array<string>>([]);
-    const [startDate, setStartDate] = useState("");
-    const [bookData, setbookData] = useState("");
-                                                                                                    
+    // const [startDate, setStartDate] = useState("");
+    const [bookDate, setDate] = useState("");
+    const [Subject, setDesc] = useState("");
+                                                                                      
     return (
         <div className="container">
             <div className="row">
@@ -50,16 +54,19 @@ export default function Booking() {
                         </div>
                         <form 
                             onSubmit={ handleSubmit(async (bookData) => {
-                            console.log("--------------",userInStore.user.id);
+                            console.log("--------------",bookData);
 
                             await axios.post(`http://localhost:8000/calender/`,
+
                                 {
-                                    user:userInStore.user.id,
+                                    user:"1",
                                     provider:"2",
-                                    date: bookData.date,
-                                    desc: bookData.desc,
+                                    bookDate: "2021-01-08",
+                                    Subject: "adsfasfdadsfasdfa",
                                 })
+                                
                                 .then(async (result: any) => {
+                                    console.log("Succccces")
                                     console.log("axxxxxios",result)
                                 })
                                 .catch((err: any) => {
@@ -100,9 +107,8 @@ export default function Booking() {
                                 <div className="col-md-6">
                                     <div className="form-group">
                                         <label className="control-label" htmlFor="date">Preferred Date </label>
-                                        {/* <input id="date" name="date" type="text" placeholder="dd/mm/yyyy" className="form-control input-md"></input> */}
-                                        <DatePicker selected={startDate} onChange={(e) => {setStartDate(e)}} />
-
+                                        <input id="date" name="bookDate" type="text" placeholder="dd/mm/yyyy" className="form-control input-md" ref={register({ required: "required" })}></input>
+                                        {/* <DatePicker selected={startDate} onChange={(e) => {setStartDate(e)}} /> */}
 
 
 
@@ -112,8 +118,8 @@ export default function Booking() {
 
                                 <div className="col-md-12">
                                     <div className="form-group">
-                                        <label className="control-label" htmlFor="appointmentfor" >Booking For </label>
-                                        <input id="appointmentfor" name="appointmentfor" className="form-control"  onChange={ (e) => { setbookData(e.target.value) }}>
+                                        <label className="control-label" htmlFor="desc" >Booking For </label>
+                                        <input id="Subject" name="Subject" className="form-control" ref={register({ required: "required" })}>
 
                                         </input>
                                     </div>
