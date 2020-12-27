@@ -21,7 +21,7 @@ import Satellite from '../catagories/satalite.jpg';
 import Parquet from '../catagories/parquet.jpg';
 import Gypsum from '../catagories/jypsum.jpg';
 import Appliance from '../catagories/light.jpg';
-import './container.css'
+
 var catImages = [{ catImg: Electrican, catName: "Electricians" },
     { catImg: Painting, catName: "Painting"},
     { catImg: Tiling, catName: "Tiling"},
