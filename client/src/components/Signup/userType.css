@@ -3,25 +3,25 @@
     height: 500px;
     margin-bottom: 200px;
     margin-top: 100px;
-    
-    
-  
 }
+
 
 #welcome{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    margin-right: 10%;
+    font-size: large;
+    text-align: center;
+    /* margin-right: 10%; */
 
 }
 
 #l {
-    border: none;
+border: none;
 background: #404040;
-color: #ffffff !important;
+color: yellow !important;
 font-weight: 100;
-padding: 20px;
+padding: 10px;
 text-transform: uppercase;
 border-radius: 6px;
 display: inline-block;
@@ -37,6 +37,9 @@ display: inline-block;
     background: none;
    
 }
+
+
+
 
 .prov:hover{
     width: 50%;

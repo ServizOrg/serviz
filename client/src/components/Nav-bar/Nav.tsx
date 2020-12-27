@@ -115,30 +115,29 @@ export default function Nav() {
 							</li>
 							
 							
-							<li className="lang-dropdown">
+							<li className="nav-item">
                                 {/* <button onClick={selectLang} className="lang-dropbtn">Languages</button> */}
-                                < div id="lang-Dropdown pc-view" className="lang-dropdown-content">
-                                    <span className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> Eng/</span>
-                                    <span className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>Ar</span>
-                                </div>
-								< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
-                                   
-                                    
-                                </div>
+                                {/* < div id="lang-Dropdown pc-view" className="lang-dropdown-content"> */}
+                                    <span className="nav-link" onClick={() => i18n.changeLanguage("en")}> Eng/</span>
+                                    <span className="nav-link" onClick={() => i18n.changeLanguage("ar")}>Ar</span>
+                                {/* </div> */}
+								
 
                             </li>
+							<li className="nav-item">
                             {token === null ?
                                 <span>
-                                    <li><Link to="/user/login">{t("log_in")}</Link></li>
-                                    <li><Link to="/user/signup">{t("join")}</Link></li>
+                                    <li className="nav-link"><Link to="/user/login">{t("log_in")}</Link></li>
+                                    <li className="nav-link"><Link to="/user/signup">{t("join")}</Link></li>
                                 </span>
                                 :
                                 <span>
-                                    <li><a onClick={checkUser}>Profile</a></li>
-                                    <li>
+                                    <li className="nav-link"><a onClick={checkUser}>Profile</a></li>
+                                    <li className="nav-link">
                                         <Logout />
                                     </li>
                                 </span>}
+								</li>
 
 						</ul>
 					</div>

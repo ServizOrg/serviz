@@ -19,12 +19,12 @@ const Usertype = (props: any) => {
     return (
         <div id="signup" className="center styled">
             <div id="welcome">
-            <h1>Welcome In SERVIZ ,Your Account Activated Successfully</h1>
-            <h2>Please,Click on The Type You Want , And Fill Your Details </h2>
+            <p>Welcome In SERVIZ ,Your Account Activated Successfully</p>
+            <p>Please,Click on The Type You Want , And Fill Your Details : </p>
             <br />
             <div className="user-type">
 
-                <button type="button" className="user" id="but"><Link id="l" to= "/client/signup">User</Link></button>
+                <button type="button" className="user" id="but"><Link id="l" to= "/client/signup"> User </Link></button>
                 <button type="button" className="prov" id="but"><Link id="l" to="/prov/signup">Provider</Link></button>
 
             </div>
