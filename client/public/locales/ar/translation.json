@@ -1,8 +1,12 @@
 {
-  "app_name": "خدماتي",
+  "app_name": "SERVIZ",
   "join": "تسجيل",
   "log_in": "دخول",
   "how_it_works": "كيف يعمل الموقع",
-  "Browse_Jobs": "عرض الوظائف"
+  "Browse_Jobs": "عرض الوظائف",
+  "profile":"حسابي",
+  "home":"الرئيسية",
+  "about":"عن",
+  "logout":"خروج"
 
 }
