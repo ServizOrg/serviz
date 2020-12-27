@@ -100,47 +100,57 @@ export default function Nav() {
 		
 			<nav className="navbar navbar-expand-lg navbar-light fixed-top">
 				<div className="container">
-					<a href="/" className="navbar-brand">SERVIZ</a>
+					<a href="/" className="navbar-brand">{t("app_name")}</a>
 					 <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
 						 <span className="navbar-toggler-icon">
 						 </span>
 						 </button>
+						 <ul className="navbar-nav ml-auto">
+						 	<li className="nav-item" onClick={handleClick}>
+								
+								< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
+									 <li className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> English</li>
+									<li className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>عربي</li>
+								</div>
+							</li>
+							</ul>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item active" onClick={handleClick}>
-								<a className="nav-link" href="/">Home</a>
+								<a className="nav-link" href="/">{t("home")}</a>
 							</li>
 							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/about">About</a>
+								<a className="nav-link" href="/about">{t("about")}</a>
 							</li>
+						
 							
 							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/howorks">How SERVIZE Work</a>
+								<a className="nav-link" href="/howorks">{t("how_it_works")}</a>
 							</li>
 							{token === null ?
 							<span>
 							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/user/login">LogIn</a>
+								<a className="nav-link" href="/user/login">{t("log_in")}</a>
 							</li>
 							<li className="nav-item" onClick={handleClick}>
-								<a className="nav-link" href="/user/signup">Join Us</a>
+								<a className="nav-link" href="/user/signup">{t("join")}</a>
 							</li>
 							</span>
 							:
 							<span>
-							<li><a onClick={checkUser}>Profile</a></li>
+							<li><a onClick={checkUser}>{t("profile")}</a></li>
 							<li>
 								<Logout />
 							</li>
 						</span>}
 
-							<li className="nav-item" onClick={handleClick}>
+							{/* <li className="nav-item" onClick={handleClick}>
 								
 							< div id="lang-Dropdown pc-view" className="lang-dropdown-content">
                                  <span className="pc-view-lang" onClick={() => i18n.changeLanguage("en")}> English</span>
                                 <span className="pc-view-lang" onClick={() => i18n.changeLanguage("ar")}>عربي</span>
                             </div>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>
