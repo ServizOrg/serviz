@@ -1,4 +1,7 @@
-#id{
+#container{
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
     align-content: center;
 }
 

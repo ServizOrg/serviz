@@ -71,7 +71,7 @@ export default function Login() {
 
                 })}
             >
-                <h1>Log In</h1>
+                <h1 id="h1">Log In</h1>
                 <label htmlFor="email" >Email:</label>
                 <input type="email" className="text" id="email" name="email" ref={register({ required: "required" })} />
                 <div className="email error" ></div>

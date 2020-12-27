@@ -1,10 +1,12 @@
 import React from 'react';
+import './About.css';
 
 const About = () => {
    return (
-      <div id="aboutus">
+      <div id="container">
+         <div id="aboutus">
          <h1> SERVIZ Vision</h1>
-         <p>To become the most efficient handyman network in the Palestine.</p>
+         <p >To become the most efficient handyman network in the Palestine.</p>
 
          <h1> About us</h1>
          <p>
@@ -27,6 +29,7 @@ const About = () => {
 
             Our handyman are trained, punctual, and highly professional so you can stay safe and get high-quality services.
 </p>
+</div>
       </div>
    );
 }

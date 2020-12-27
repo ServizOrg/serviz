@@ -1,7 +1,9 @@
 #login {
     position: relative;
+    left: 500px;
     top: -850px;
     animation: popup 1s ease forwards;
+    margin-bottom: 200px;
     
 }
 
@@ -27,6 +29,7 @@
   font-size: 2em;
   font-weight: 900;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #login-form input {

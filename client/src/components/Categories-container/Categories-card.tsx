@@ -14,22 +14,22 @@ const CategoriesCard = ({ user }: { user: any }) => {
         axios.post(`http://localhost:8000/category/providers/`, {
             catName: user.catName,
         })
-        .then((result: any) => {
-             console.log("axios", result.data[0].providers)
-            dispatch(getProv(result.data[0].catName, result.data[0].providers ))
-        })
-        .catch((err: any) => {
-            console.error("err===== =>", err);
-        })
+            .then((result: any) => {
+                console.log("axios", result.data[0].providers)
+                dispatch(getProv(result.data[0].catName, result.data[0].providers))
+            })
+            .catch((err: any) => {
+                console.error("err===== =>", err);
+            })
     }
     return (
-            <div className="card1 card1-block">
-            <img className="img1" src={user.catImg} />
-            <button onClick={handleClick}>
-                <h5 className="card-title mt-3 mb-3"><Link to="/provider">{user.catName}</Link></h5>
-            </button>
-                {/* <p className="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> */}
-            </div>
+        <div className="card1 card1-block" id="car">
+            <img className="img1" src={user.catImg} onClick={handleClick} />
+
+            <h5 className="card-title mt-3 mb-3"><Link to="/provider">{user.catName}</Link></h5>
+
+            {/* <p className="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> */}
+        </div>
         // <div className="cat-container">
         //     <div className="card-item">
         //         <img className="cat-img" src={user} alt="Photo of sunset" />

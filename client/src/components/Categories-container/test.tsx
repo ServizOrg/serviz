@@ -42,7 +42,7 @@ const Test = () => {
     return (
 
 
-        <Carousel responsive={responsive}>
+        <Carousel responsive={responsive} className="cat">
 
             <div className="cat-container">
                 <div className="card-item">
@@ -93,6 +93,7 @@ const Test = () => {
     
 
         </Carousel>
+     
     );
 }
 

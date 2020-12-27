@@ -20,10 +20,10 @@ import ServiceProvider from "../src/components/ServiceProvider/ServiceProvider"
 import Booking from "./components/booking/Booking"
 import Activate from './components/Activate';
 // import Search from './components/search/Search';
-import Nav from  "./components/Nav-bar/Nav"
+import Nav from "./components/Nav-bar/Nav"
 import HowWorks from './components/HowWorks/HowWorks'
-import About from './components/about/About'
 
+import ProviderCard from './components/Provider-container/Provider-card'
 
 import Header from "./components/Header/Header";
 
@@ -41,10 +41,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Nav/>
+        <Nav />
+        <ServiceProvider />
         {/* < Map /> */}
         {/* <Navbar /> */}
-        {/* <HowWorks/> */}
+        {/* <Test/> */}
         {/* <Catagories /> */}
         {/* <Categories /> */}
         {/* <ProviderProf /> */}
@@ -87,13 +88,12 @@ function App() {
           {/* <Route path="/profiles/userview" component={UserView} /> */}
           {/* <Route path="/profiles/userview" component={UserView} /> */}
           <Route path="/howorks" component={HowWorks} />
-          <Route path="/about" component={About}/>
 
 
         </Switch>
-       
+
         <Footer />
-       
+
       </div>
     </BrowserRouter>
   );
