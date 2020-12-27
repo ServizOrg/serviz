@@ -190,7 +190,10 @@ export default function ProviderProf() {
                     </div>
 
                     <div className="col-md-8">
-                        <div className="tab-content profile-tab" id="myTabContent">
+                        <div>
+                            <BookingList />
+                        </div>
+                        {/* <div className="tab-content profile-tab" id="myTabContent">
                             <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div className="row">
                                     <div className="col-md-6">
@@ -233,12 +236,10 @@ export default function ProviderProf() {
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <BookingList/>
-                            </div>
-                        </div> 
-                        </div>
+
+                        </div> */}
                     </div>
+                </div>
                 {/* </div> */}
             </form>
         </div >

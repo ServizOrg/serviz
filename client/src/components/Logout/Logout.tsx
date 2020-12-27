@@ -9,7 +9,7 @@ function Logout() {
         <div >
             <div>
             
-                <Button onClick={() => {
+                <Button style= {{color:"darkgoldenrod"}} onClick={() => {
                      localStorage.clear();
                         window.location.href = '/'
                     }} id="logout">Logout</Button>

@@ -125,7 +125,7 @@ export default function Booking() {
                                 </div>
                                 <div className="col-md-12">
                                     <div className="form-group">
-                                        <button id="singlebutton" name="singlebutton" className="btn btn-default">Make A Booking</button>
+                                        <button id="singlebutton" name="singlebutton" className="btn btn-default" onClick={() => { window.location.href = '/profiles/provider' }} >Make A Booking</button>
                                     </div>
                                 </div>
                             </div>

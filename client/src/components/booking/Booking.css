@@ -2,8 +2,12 @@
     background-color: #fff;
     border: 1px solid #e9e6e8;
     padding: 40px;
+    margin-top: 80px;
+
 }
 
 .well-title {
+    margin-top: 100px;
+
     margin-bottom: 40px;
 }

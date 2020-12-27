@@ -15,7 +15,7 @@ import Footer from "./components/Footer/Footer";
 import ForgotPassword from "./components/Forgot-password/Forgot-password";
 import ResetPassword from "./components/Reset-password/Reset-password";
 import ResetPasswordConfirm from "./components/Reset-password/Reset-password-confirm"
-import ProviderContainer from "./components/Provider-container/Provider-container";
+// import ProviderContainer from "./components/Provider-container/Provider-container";
 import ServiceProvider from "../src/components/ServiceProvider/ServiceProvider"
 import Booking from "./components/booking/Booking"
 import Activate from './components/Activate';
@@ -42,7 +42,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Nav />
-        <ServiceProvider />
+        {/* <ServiceProvider /> */}
         {/* < Map /> */}
         {/* <Navbar /> */}
         {/* <Test/> */}
@@ -74,7 +74,7 @@ function App() {
           <Route path="/user/login" component={Login} />
 
           {/* <Route path="/providerProfile" exact component={() => < ProviderProf/>} /> */}
-          <Route path="/provider" component={ProviderContainer} />
+          <Route path="/provider" component={ServiceProvider} />
           <Route path="/book" component={Booking} />
 
           <Route path="/auth/users/reset_password/" component={ForgotPassword} />
