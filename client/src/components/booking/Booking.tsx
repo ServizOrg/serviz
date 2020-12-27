@@ -55,14 +55,13 @@ export default function Booking() {
                         <form 
                             onSubmit={ handleSubmit(async (bookData) => {
                             console.log("--------------",bookData);
-
+                            console.log("--------------",userInStore.user);
                             await axios.post(`http://localhost:8000/calender/`,
-
                                 {
-                                    user:"1",
-                                    provider:"2",
-                                    bookDate: "2021-01-08",
-                                    Subject: "adsfasfdadsfasdfa",
+                                    user: userInStore.user.pk,
+                                    provider: "2",
+                                    bookDate: bookData.bookDate,
+                                    Subject: bookData.Subject
                                 })
                                 
                                 .then(async (result: any) => {
